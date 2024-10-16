@@ -255,8 +255,9 @@ main.style.flexWrap="wrap"
   for(let i=0;i<data.length;i++){
 
 setTimeout(function (){
+  var color=["yellow","green","blue","red","black","pink","violet","grey"]
   cards[i].innerHTML=`<h4>${data[i].title}</h4><img src="${data[i].image}" alt="" style="height: 150px; width: 150px;">
-  <button>Buy Now </button> `
+  <button>Buy Now</button> `
   cards[i].style.display="flex"
   cards[i].style.flexDirection = 'column'
   cards[i].style.justifyContent = 'center';
@@ -265,6 +266,7 @@ cards[i].style.height=`${"300px"}`
 cards[i].style.width=`${"300px"}`
 cards[i].style.width=`${"300px"}`
 cards[i].style.gap=`${"1rem"}`
+cards[i].style.backgroundColor=`${color[i]}`
 },i*1000);
 
   }
