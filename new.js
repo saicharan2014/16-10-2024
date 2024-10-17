@@ -243,8 +243,8 @@ var data=[
 
 var main=document.getElementById("main");
 main.style.display="flex"
-main.style.gap=`${"1rem"}`
-main.style.height=`${"100vh"}`
+main.style.gap="1rem"
+main.style.height="100vh"
 main.style.justifyContent = 'center';
 main.style.flexWrap="wrap"
 
@@ -255,17 +255,16 @@ main.style.flexWrap="wrap"
   for(let i=0;i<data.length;i++){
 
 setTimeout(function (){
-  var color=["yellow","green","blue","red","black","pink","violet","grey"]
+  var color=["yellow","green","blue","red","purple","pink","violet","grey"]
   cards[i].innerHTML=`<h4>${data[i].title}</h4><img src="${data[i].image}" alt="" style="height: 150px; width: 150px;">
   <button>Buy Now</button> `
   cards[i].style.display="flex"
   cards[i].style.flexDirection = 'column'
   cards[i].style.justifyContent = 'center';
   cards[i].style.alignItems = 'center';
-cards[i].style.height=`${"300px"}`
-cards[i].style.width=`${"300px"}`
-cards[i].style.width=`${"300px"}`
-cards[i].style.gap=`${"1rem"}`
+cards[i].style.height="300px"
+cards[i].style.width="300px"
+cards[i].style.gap="1rem"
 cards[i].style.backgroundColor=`${color[i]}`
 },i*1000);
 
